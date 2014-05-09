@@ -99,13 +99,17 @@ textarea {
 body {
     font-family: 'Jura', sans-serif;
     background-color: #4700ff;
-    background-image: url(img/bgcooper.svg);
-    background-repeat: repeat;
+    background-image: url(img/test.png) repeat;
     color: #646464;
 }  
 header {
-    font-size: 2em;
+    font-size: 3.5em;
     margin: 0px auto;
+    width: 350px;
+    font-family: 'fontdiner-swanky', sans-serif;
+    color: yellow;
+    text-shadow: grey 2px 2px;
+    margin-top: 20px;
 }
 #container {
 
@@ -121,11 +125,13 @@ a {
     display: inline-block;
     padding: 5px;
     background-color: #ffa500;
-    border: 2px #38ff00 dashed;
+    border-top: 2px #38ff00 dashed;
+    border-left: 2px #38ff00 dashed;
+    border-right: 2px #38ff00 dashed;
     margin: 0px 10px 0px 10px;
 }
 
-#star-five {
+.star {
    top: 70px;
    position: relative;
    display: inline-block;
@@ -139,9 +145,8 @@ a {
    -webkit-transform: rotate(35deg);
    -ms-transform:     rotate(35deg);
    -o-transform:      rotate(35deg);
-   background-image: url("");
 }
-#star-five:before {
+.star:before {
    border-bottom: 80px solid #ffa500;
    border-left: 30px solid transparent;
    border-right: 30px solid transparent;
@@ -158,7 +163,7 @@ a {
    -o-transform:      rotate(-35deg);
 
 }
-#star-five:after {
+.star:after {
    position: absolute;
    display: block;
    color: red;
@@ -173,16 +178,40 @@ a {
    -moz-transform:    rotate(-70deg);
    -ms-transform:     rotate(-70deg);
    -o-transform:      rotate(-70deg);
-   content: '';
 }
-article {
-    margin: 0px 50px 0px 50px;
-    border: 2px #ffa500;
+#meImg {
+    position: relative;
+    top: 40px;
+    height: 100px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 2px dashed yellow;
+    overflow: hidden;
+    margin: 0 15px 0px 15px;
+}
+#meImg img {
+    width: auto;
+    height: 100px;
+    display: inline-block;
+}
+main {
+    margin: 0 auto;
+    border: 3px dashed #ffa500;
     background-color: #38ff00;
-    min-height: 200px;
-    min-width: 500px;
-}
+    height: 500px;
+    width: 700px;
+     -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+/*    box-shadow: 15px 15px 0px 0px grey;
+*/}
+article {
+    padding: 20px;
+    color: blue;
+    color: #646464;
 
+}
 
 
 
