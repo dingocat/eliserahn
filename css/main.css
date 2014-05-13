@@ -21,6 +21,11 @@ textarea {
 html {
     font-size: 1em;
     line-height: 1.4;
+     background: url(https://lh5.googleusercontent.com/-ZLYUXh2ekPI/U3JXjFpqIOI/AAAAAAAAS00/1vHx0JVlxww/w2234-h1258-no/bg1.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /*
@@ -98,18 +103,17 @@ textarea {
    ========================================================================== */
 body {
     font-family: 'Jura', sans-serif;
-    background-color: #4700ff;
-    background-image: url(img/test.png) repeat;
+    /*background-color: #4700ff;*/
     color: #646464;
 }  
 header {
-    font-size: 3.5em;
+    font-size: 3.7em;
     margin: 0px auto;
     width: 350px;
     font-family: 'fontdiner-swanky', sans-serif;
     color: yellow;
     text-shadow: grey 2px 2px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 #container {
 
@@ -181,7 +185,7 @@ a {
 }
 #meImg {
     position: relative;
-    top: 40px;
+    top: 30px;
     height: 100px;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
@@ -199,7 +203,7 @@ main {
     margin: 0 auto;
     border: 3px dashed #ffa500;
     background-color: #38ff00;
-    height: 500px;
+    height: 450px;
     width: 700px;
      -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
