@@ -21,7 +21,7 @@ textarea {
 html {
     font-size: 1em;
     line-height: 1.4;
-     background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 99%,rgba(0,0,0,0.85) 100%),
+     background: radial-gradient(ellipse at center, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.65) 100%),
      url(https://lh5.googleusercontent.com/-ZLYUXh2ekPI/U3JXjFpqIOI/AAAAAAAAS00/1vHx0JVlxww/w2234-h1258-no/bg1.png),
       no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -104,7 +104,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-    font-family: 'Jura', sans-serif;
+    font-family: 'jura', sans-serif;
+    font-weight: 600;
     /*background-color: #4700ff;*/
     color: #646464;
 }  
@@ -116,75 +117,30 @@ header {
     color: yellow;
     text-shadow: #585451 2px 3px;
     margin-top: 25px;
+    display: inline-block;
 }
 #container {
-
+    margin-top: 70px;
 } 
 nav {
-    width: 500px;
-    margin: 0px auto;
+    text-align: center;
+    border-bottom: solid 2px #585451;
 }
 a {
     text-decoration: none; 
+    color: red;
+    font-size: 1.2em;
 }
 .navButton {
     display: inline-block;
     padding: 5px;
-    background-color: #ffa500;
+/*    background-color: #ffa500;
     border-top: 2px #38ff00 dashed;
     border-left: 2px #38ff00 dashed;
-    border-right: 2px #38ff00 dashed;
-    margin: 0px 10px 0px 10px;
+    border-right: 2px #38ff00 dashed;*/
+    margin: 0px 50px 0px 50px;
 }
 
-.star {
-   top: 70px;
-   position: relative;
-   display: inline-block;
-   color: #ffa500;
-   width: 0px;
-   height: 0px;
-   border-right:  100px solid transparent;
-   border-bottom: 70px  solid #ffa500;
-   border-left:   100px solid transparent;
-   -moz-transform:    rotate(35deg);
-   -webkit-transform: rotate(35deg);
-   -ms-transform:     rotate(35deg);
-   -o-transform:      rotate(35deg);
-}
-.star:before {
-   border-bottom: 80px solid #ffa500;
-   border-left: 30px solid transparent;
-   border-right: 30px solid transparent;
-   position: absolute;
-   height: 0;
-   width: 0;
-   top: -45px;
-   left: -65px;
-   display: block;
-   content: '';
-   -webkit-transform: rotate(-35deg);
-   -moz-transform:    rotate(-35deg);
-   -ms-transform:     rotate(-35deg);
-   -o-transform:      rotate(-35deg);
-
-}
-.star:after {
-   position: absolute;
-   display: block;
-   color: red;
-   top: 3px;
-   left: -105px;
-   width: 0px;
-   height: 0px;
-   border-right: 100px solid transparent;
-   border-bottom: 70px solid #ffa500;
-   border-left: 100px solid transparent;
-   -webkit-transform: rotate(-70deg);
-   -moz-transform:    rotate(-70deg);
-   -ms-transform:     rotate(-70deg);
-   -o-transform:      rotate(-70deg);
-}
 #meImg {
     position: relative;
     top: 30px;
@@ -208,12 +164,12 @@ main {
     background-color: #38ff00;
     height: 350px;
     width: 700px;
-    -webkit-transform: skew(-10deg);
+   /* -webkit-transform: skew(-10deg);
        -moz-transform: skew(-10deg);
-         -o-transform: skew(-10deg);
-     -moz-border-radius: 10px;
+         -o-transform: skew(-10deg);*/
+/*     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
-    border-radius: 10px;
+    border-radius: 10px;*/
     box-shadow: 7px 7px 0px 0px #585451;
 }
 article {
