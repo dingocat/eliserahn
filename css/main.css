@@ -106,86 +106,210 @@ textarea {
 body {
     font-family: 'jura', sans-serif;
     font-weight: 600;
-    /*background-color: #4700ff;*/
-    color: #646464;
+    color: yellow;
 }  
+/* Navigation */
+
+
 header {
-    font-size: 3.7em;
     margin: 0px auto;
     width: 350px;
-    font-family: 'fontdiner-swanky', sans-serif;
-    color: yellow;
-    text-shadow: #585451 2px 3px;
-    margin-top: 25px;
-    display: inline-block;
 }
-#container {
-    margin-top: 70px;
-} 
-nav {
-    text-align: center;
-    border-bottom: solid 2px #585451;
-}
-a {
+header a {
     text-decoration: none; 
-    color: red;
-    font-size: 1.2em;
+    font-size: 3.7em;;
+    font-family: 'Fontdiner Swanky', sans-serif;
+    color: yellow;
+    text-shadow: black 2px 3px;
+}
+header a:hover {
+    text-shadow: black 3px 4px;
+    color: white;
+}
+#navContainer {
+    border-bottom: solid 2px #585451;
+    background-color: rgba(96, 96, 96,.6);
+}
+#navLeft {
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+}
+#navRight {
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+}
+nav {
+    padding-top: 20px;
 }
 .navButton {
     display: inline-block;
-    padding: 5px;
-/*    background-color: #ffa500;
-    border-top: 2px #38ff00 dashed;
-    border-left: 2px #38ff00 dashed;
-    border-right: 2px #38ff00 dashed;*/
-    margin: 0px 50px 0px 50px;
 }
-
-#meImg {
-    position: relative;
-    top: 30px;
-    height: 100px;
-    z-index: 2;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    border: 2px dashed yellow;
-    overflow: hidden;
-    margin: 0 15px 0px 15px;
-}
-#meImg img {
-    width: auto;
-    height: 100px;
+.navButton2 {
     display: inline-block;
+}
+.navButton2 a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #8FC31F;
+    text-shadow: black 0 1px 1px;
+}
+.navButton2 a:hover {
+    color: white;
+    text-shadow: black 0 1px 1px;
+}
+.navButton2 a:active {
+    color: yellow;
+    text-shadow: black 0 1px 1px;
+}
+.navButton a {
+    text-decoration: none; 
+    font-size: 1.3em;
+    color: #0FA9F0;
+    text-shadow: black 0 1px 1px;
+}
+.navButton a:hover {
+    color: white;
+    text-shadow: black 0 3px 1px;
+}
+.navButton a:active {
+    color: yellow;
+    text-shadow: black 0 1px 1px;
+}
+/* Main */
+
+container {
+
 }
 main {
     margin: 0 auto;
-    border: 3px dashed #4700ff;
-    background-color: #38ff00;
-    height: 350px;
-    width: 700px;
-   /* -webkit-transform: skew(-10deg);
-       -moz-transform: skew(-10deg);
-         -o-transform: skew(-10deg);*/
-/*     -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;*/
-    box-shadow: 7px 7px 0px 0px #585451;
+    background-color: #585451;
+    height: 500px;
+    width: 800px;
+    padding: 20px 40px 20px 40px;
 }
 article {
-    padding: 20px;
-    color: blue;
-    color: #646464;
+    width: 450px;
+    text-align: justify;
+}
+p {
+    color: #0FA9F0;
+}
+li a {
+    text-decoration: none;
+    color: #8FC31F;
+    font-size: 1em;
+    text-shadow: black 0 1px 1px;
+}
+li a:hover {
+    color: white;
+}
+ul li p {
+    padding-left: 15px;
+}
+h1 {
+    font-size: 1.2em;
+    text-shadow: black 0 1px 1px;
+}
+h2 {
+    font-size: 1.1em;
+    text-shadow: black 0 1px 1px;
 }
 
+/* Skills */
 
+#skillsArticle {
+    width: 440px;
+}
+.column {
+    display: block;
+    float: left;
+    width: 100%;
+}
+.thumbs {
+    height: 100px;
+    width: 100px;
+    float: left;
+    border: 2px solid #8FC31F;
+    margin: 5px;
+    box-shadow: 1px 1px 1px black;
+}
+.thumbs:hover {
+    border: 3px solid yellow;
+    height: 98px;
+    width: 98px;
+    box-shadow: 3px 3px 3px black;
+}
+.thumbs:hover::before {
+}
+.thumbs:hover::after {
+    color: #0FA9F0;
+    padding-left: 6px;
+    text-shadow: black 0 1px 1px;
+}
+#mediaContainer {
+    height: 400px;
+    width: 400px;
+    border: 3px solid #0BFFFF;
+    float: right;
+}
+#mainImage {
 
-
-
-
-
-
-
+}
+#mediaDescription {
+    width: 700px;
+    float: left;
+}
+#thumb1 {
+    background-image: url("../img/exothumb.png");
+}
+#thumb1:hover::after {
+    content: "ExoHelix";
+}
+#thumb2 {
+    background-image: url("../img/sharkthumb.png");
+}
+#thumb2:hover::after {
+    content: "Logos"; 
+}
+#thumb3 {
+    background-image: url("../img/tacothumb.png");
+}
+#thumb3:hover::after {
+    content: "T-Shirts";
+}
+#thumb4 {
+    background-image: url("../img/tacothumb.png");
+}
+#thumb4:hover::after {
+    content: "Misc. Graphic Design";
+}
+#thumb5 {
+    background-image: url("../img/tacothumb.png");
+}
+#thumb5:hover::after {
+    content: "TV";
+}
+#thumb6 {
+    background-image: url("../img/tacothumb.png");
+}
+#thumb6:hover::after {
+    content: "Film";
+}
+#thumb7 {
+    background-image: url("../img/tacothumb.png");
+}
+#thumb7:hover::after {
+    content: "Gaming Concept";
+}
+#thumb8 {
+    background-image: url("../img/tacothumb.png");
+}
+#thumb8:hover::after {
+    content: "Senior Projects";
+}
 
 
 /* ==========================================================================
