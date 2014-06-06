@@ -210,18 +210,31 @@ ul li p {
     padding-left: 15px;
 }
 h1 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-shadow: black 0 1px 1px;
 }
 h2 {
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-shadow: black 0 1px 1px;
+}
+h3 {
+   font-size: 1.1em;
+    text-shadow: black 0 1px 1px;
+    color: #8FC31F; 
 }
 
 /* Skills */
-
+#skillsContainer {
+    margin: 0 auto;
+    background-color: #585451;
+    min-height: 400px;
+    width: 800px;
+    padding: 20px 40px 20px 40px;
+    overflow: auto;
+    margin-bottom: 50px;
+}
 #skillsArticle {
-    width: 440px;
+    
 }
 .column {
     display: block;
@@ -249,12 +262,12 @@ h2 {
     padding-left: 6px;
     text-shadow: black 0 1px 1px;
 }
-#mediaContainer {
+/*#mediaContainer {
     height: 400px;
     width: 400px;
     border: 3px solid #0BFFFF;
     float: right;
-}
+}*/
 #mainImage {
 
 }
@@ -266,7 +279,7 @@ h2 {
     background-image: url("../img/exothumb.png");
 }
 #thumb1:hover::after {
-    content: "ExoHelix";
+    content: "Exohelix";
 }
 #thumb2 {
     background-image: url("../img/sharkthumb.png");
@@ -284,7 +297,7 @@ h2 {
     background-image: url("../img/tacothumb.png");
 }
 #thumb4:hover::after {
-    content: "Misc. Graphic Design";
+    content: "GFX";
 }
 #thumb5 {
     background-image: url("../img/tacothumb.png");

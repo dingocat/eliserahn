@@ -1,21 +1,15 @@
-$(document).ready(function() {
-    $("#image1").fadeIn("slow");
-    $("#image2").fadeOut("fast");
-    $("#image3").fadeOut("fast");
+// $('#thumb1').on('click', function () {
+//     var target1 = $.activePage.find('#exohelix').get(0).offsetTop;
+//     $.silentScroll(target1);
+// });
 
-    $("#thumb1").click(function() {
-        $("#image1").fadeIn("slow");
-        $("#image2").fadeOut("fast");
-        $("#image3").fadeOut("fast");
-    });
-    $("#thumb2").click(function() {
-        $("#image1").fadeOut("fast");
-        $("#image2").fadeIn("slow");
-        $("#image3").fadeOut("fast");
-    });
-    $("#thumb3").click(function() {
-        $("#image1").fadeOut("fast");
-        $("#image2").fadeOut("fast");
-        $("#image3").fadeIn("slow");
-    });
-});
+// $('#thumb2').on('click', function () {
+//     var target2 = $.activePage.find('#logos').get(0).offsetTop;
+//     $.silentScroll(target2);
+// });
+
+
+// $('#thumb3').on('click', function () {
+//     var target3 = $.activePage.find('#tshirts').get(0).offsetTop;
+//     $.silentScroll(target3);
+// });
