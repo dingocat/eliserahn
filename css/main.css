@@ -19,7 +19,7 @@ textarea {
 }
 
 html {
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.4;
      background: radial-gradient(ellipse at center, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.65) 100%),
      url(https://lh5.googleusercontent.com/-ZLYUXh2ekPI/U3JXjFpqIOI/AAAAAAAAS00/1vHx0JVlxww/w2234-h1258-no/bg1.png),
@@ -108,12 +108,18 @@ body {
     font-weight: 600;
     color: yellow;
 }  
+.image {
+    border: 2px solid #8FC31F;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+}
 /* Navigation */
 
 
 header {
-    margin: 0px auto;
-    width: 350px;
+     display: inline-block;
+     padding-left: 55px; 
 }
 header a {
     text-decoration: none; 
@@ -128,46 +134,33 @@ header a:hover {
 }
 #navContainer {
     border-bottom: solid 2px #585451;
-    background-color: rgba(96, 96, 96,.6);
+    background-color: rgba(96, 96, 96,.8);
 }
 #navLeft {
     display: inline-block;
-    position: absolute;
-    left: 50px;
+    float: left;
+/*    position: absolute;
+    left: 550px;*/
 }
 #navRight {
     display: inline-block;
-    position: absolute;
-    right: 50px;
-    top: 20px;
+    float: right;
+  /*  position: absolute;
+    right: 600px;
+    top: 20px;*/
 }
 nav {
     padding-top: 20px;
+    margin: 0px auto;
+    width: 825px;
 }
 .navButton {
     display: inline-block;
 }
-.navButton2 {
-    display: inline-block;
-}
-.navButton2 a {
-    text-decoration: none;
-    font-size: 1.3em;
-    color: #8FC31F;
-    text-shadow: black 0 1px 1px;
-}
-.navButton2 a:hover {
-    color: white;
-    text-shadow: black 0 1px 1px;
-}
-.navButton2 a:active {
-    color: yellow;
-    text-shadow: black 0 1px 1px;
-}
 .navButton a {
-    text-decoration: none; 
-    font-size: 1.3em;
-    color: #0FA9F0;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #8FC31F;
     text-shadow: black 0 1px 1px;
 }
 .navButton a:hover {
@@ -178,24 +171,38 @@ nav {
     color: yellow;
     text-shadow: black 0 1px 1px;
 }
+
 /* Main */
+a {
+    color: #8FC31F;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
+}
 
 container {
 
 }
 main {
     margin: 0 auto;
-    background-color: #585451;
     height: 500px;
     width: 800px;
     padding: 20px 40px 20px 40px;
+    margin-top: 50px;
+    border: solid 2px #585451;
+    border-radius: 5px;
+    background-color: rgba(96, 96, 96,.8);
 }
 article {
     width: 450px;
     text-align: justify;
+    float: left;
 }
 p {
     color: #0FA9F0;
+    text-shadow: black 0 1px 1px;
 }
 li a {
     text-decoration: none;
@@ -210,28 +217,38 @@ ul li p {
     padding-left: 15px;
 }
 h1 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     text-shadow: black 0 1px 1px;
 }
 h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-shadow: black 0 1px 1px;
 }
 h3 {
-   font-size: 1.1em;
+   font-size: 1.3em;
     text-shadow: black 0 1px 1px;
     color: #8FC31F; 
+}
+#me {
+    background-image: url("../img/legome.png");
+    height: 300px;
+    width: 300px;
+    float: right;
+    background-position: center;
 }
 
 /* Skills */
 #skillsContainer {
     margin: 0 auto;
-    background-color: #585451;
+    background-color: rgba(96, 96, 96,.8);
     min-height: 400px;
     width: 800px;
     padding: 20px 40px 20px 40px;
     overflow: auto;
     margin-bottom: 50px;
+    margin-top: 50px;
+    border: solid 2px #585451;
+    border-radius: 5px;
 }
 #skillsArticle {
     
@@ -240,6 +257,28 @@ h3 {
     display: block;
     float: left;
     width: 100%;
+    margin: 7px 0px 7px 0px;
+    text-align: justify;
+}
+.columnSmall {
+    display: inline-block;
+    float: left;
+    text-align: justify;
+    margin-right: 15px;
+}
+.columnSmL {
+    display: inline-block;
+    float: left;
+    width: 450px;
+}
+.columnSmR {
+    display: inline-block;
+    width: 450px;
+    float: right;
+    text-align: justify;
+}
+.column iframe {
+    margin-left: 100px;
 }
 .thumbs {
     height: 100px;
@@ -247,6 +286,7 @@ h3 {
     float: left;
     border: 2px solid #8FC31F;
     margin: 5px;
+    border-radius: 5px;
     box-shadow: 1px 1px 1px black;
 }
 .thumbs:hover {
@@ -262,30 +302,17 @@ h3 {
     padding-left: 6px;
     text-shadow: black 0 1px 1px;
 }
-/*#mediaContainer {
-    height: 400px;
-    width: 400px;
-    border: 3px solid #0BFFFF;
-    float: right;
-}*/
-#mainImage {
-
-}
-#mediaDescription {
-    width: 700px;
-    float: left;
-}
 #thumb1 {
-    background-image: url("../img/exothumb.png");
+    background-image: url("../img/webthumb.png");
 }
 #thumb1:hover::after {
-    content: "Exohelix";
+    content: "Web";
 }
 #thumb2 {
     background-image: url("../img/sharkthumb.png");
 }
 #thumb2:hover::after {
-    content: "Logos"; 
+    content: "Brand"; 
 }
 #thumb3 {
     background-image: url("../img/tacothumb.png");
@@ -300,30 +327,66 @@ h3 {
     content: "GFX";
 }
 #thumb5 {
-    background-image: url("../img/tacothumb.png");
+    background-image: url("../img/tvthumb.png");
 }
 #thumb5:hover::after {
     content: "TV";
 }
 #thumb6 {
-    background-image: url("../img/tacothumb.png");
+    background-image: url("../img/filmthumb.png");
 }
 #thumb6:hover::after {
     content: "Film";
 }
-#thumb7 {
-    background-image: url("../img/tacothumb.png");
+/*Exohelix*/
+#exoimg1 {
+ background-image: url("../img/exologo.png");
+ background-position: center; 
+ height: 200px;
+ width: 300px;
 }
-#thumb7:hover::after {
-    content: "Gaming Concept";
+#web2 {
+    background-image: url("../img/web2.png");
+    background-position: center;
+    height: 200px;
+    width: 300px;
 }
-#thumb8 {
-    background-image: url("../img/tacothumb.png");
+#exoweb {
+    background-image: url("../img/exosite.png");
+    background-position: ;
+    height: 200px;
+    width: 300px;
 }
-#thumb8:hover::after {
-    content: "Senior Projects";
+/*#exoimg2 {
+    background-image: url("../img/exoimg2.svg");
+    height: 400px;
+    width: 250px;
+}*/
+/*Logos*/
+#makoimg {
+    background-image: url("../img/shark.png");
+    background-color: black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 300px;
 }
-
+/*t-shirts*/
+#chximg {
+    background-image: url("../img/chximg.png");
+    height: 200px;
+    width: 300px;
+}
+#cooperimg {
+    background-image: url("../img/bgcooper.svg");
+    background-size: contain;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 300px;
+}
 
 /* ==========================================================================
    Helper classes
