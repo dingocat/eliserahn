@@ -29,7 +29,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-
+ 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -139,7 +139,7 @@ body {
 
 header {
      display: inline-block;
-     padding-left: 45px; 
+     padding-left: 40px; 
 }
 header a {
     text-decoration: none; 
