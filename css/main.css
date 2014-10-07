@@ -342,7 +342,7 @@ h3 {
     background-image: url("../img/sharkthumb.png");
 }
 #thumb2:hover::after {
-    content: "Brand"; 
+    content: "Design"; 
 }
 #thumb3 {
     background-image: url("../img/tacothumb.png");
